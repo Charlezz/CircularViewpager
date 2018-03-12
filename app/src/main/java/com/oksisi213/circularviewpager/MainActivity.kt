@@ -17,7 +17,6 @@ class MainActivity : AppCompatActivity() {
 		val TAG = MainActivity::class.java.simpleName
 	}
 
-
 	override fun onCreate(savedInstanceState: Bundle?) {
 		super.onCreate(savedInstanceState)
 		setContentView(R.layout.activity_main)
@@ -76,7 +75,7 @@ class MainActivity : AppCompatActivity() {
 
 		override fun destroyItem(container: ViewGroup, position: Int, view: Any) {
 			Log.e(TAG, "destroyItem=$position")
-//			container.removeView(view as View)
+			container.removeView(view as View)
 		}
 
 	}
